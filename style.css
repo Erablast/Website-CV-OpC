@@ -1,0 +1,35 @@
+*{
+  font-family: sans-serif;
+}
+body{
+  background-color:#8a8886;
+}
+.hero{
+  margin-bottom: 60px;
+}
+.yellowBoldText{
+  font-weight: bold;
+  color: #f2b130;
+}
+.underlined{
+  border-bottom: 5px solid #f2b130;
+}
+.formationContainer{
+
+
+}
+.upperContent{
+  border-bottom: 5px solid #f2b130;
+  display: flex;
+
+}
+.upperContent h2{
+  font-size: 45px;
+  margin: 0px;
+}
+i{
+  color : #f2b130;
+  font-size: 50px;
+  position: relative;
+  margin: 0px 20px 0px 20px;
+}
