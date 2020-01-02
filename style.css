@@ -1,35 +1,91 @@
-*{
+body{
+  padding:0px;
+  margin: 0px;
   font-family: sans-serif;
 }
-body{
-  background-color:#8a8886;
+h3{
+  font-weight: normal;
 }
 .hero{
   margin-bottom: 60px;
+  text-align: center;
 }
 .yellowBoldText{
   font-weight: bold;
-  color: #f2b130;
+  color: #00897B;
 }
 .underlined{
-  border-bottom: 5px solid #f2b130;
+  border-bottom: 5px solid #00897B;
 }
-.formationContainer{
-
-
+.formationContainer, .experienceContainer, .recommandationsContainer{
+margin: 100px 0px 0px 0px;
 }
 .upperContent{
-  border-bottom: 5px solid #f2b130;
+  border-bottom: 5px solid #00897B;
   display: flex;
-
+}
+.upperContent i{
+  font-size: 30px;
+  color : #00897B;
+  margin: 0px 20px 0px 0px;
 }
 .upperContent h2{
-  font-size: 45px;
   margin: 0px;
 }
-i{
-  color : #f2b130;
-  font-size: 50px;
+.leftContent{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+.rightContent{
+  text-align: center;
+}
+.leftContent i{
+  color : #00897B;
+  font-size: 20px;
   position: relative;
-  margin: 0px 20px 0px 20px;
+  padding: 16px 10px 0px 0px;
+}
+.RecommandationsLeftContent{
+  text-align: center;
+  margin: 55px 0px 55px 0px;
+}
+/* left sections */
+#leftSection{
+ background-color: #00897B;
+ padding: 5px 0px 0px 0px;
+ margin: 0px;
+}
+.profilePicture{
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+.profilePicture img{
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border: solid 3px #004D40;
+  border-radius: 100%;*
+}
+.darkBand{
+  color: #00897B ;
+  background-color: #004D40;
+  text-align: center;
+}
+.contactBox p{
+  padding-left: 10%;
+}
+.aboutMeBox{
+  text-align: center;
+}
+.loisirIllustrationWrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.loisirIllustrationWrapper i{
+  font-size: 40px;
+  border: 2px solid black;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
 }
