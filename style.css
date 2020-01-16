@@ -1,4 +1,4 @@
-body{
+body, html{
   padding:0px;
   margin: 0px;
   font-family: sans-serif;
@@ -17,11 +17,12 @@ h3{
 .underlined{
   border-bottom: 5px solid #00897B;
 }
-.formationContainer, .experienceContainer, .recommandationsContainer{
+.formationContainer{
 margin: 100px 0px 0px 0px;
 }
 .upperContent{
   border-bottom: 5px solid #00897B;
+  padding-left: 30px;
   display: flex;
 }
 .upperContent i{
@@ -46,9 +47,14 @@ margin: 100px 0px 0px 0px;
   position: relative;
   padding: 16px 10px 0px 0px;
 }
-.RecommandationsLeftContent{
+.recommandationsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.recommandationsContainer div{
+  padding: 10px 0px 10px 0px;
   text-align: center;
-  margin: 55px 0px 55px 0px;
 }
 /* left sections */
 #leftSection{
@@ -56,16 +62,29 @@ margin: 100px 0px 0px 0px;
  padding: 5px 0px 0px 0px;
  margin: 0px;
 }
+.bold{
+  font-weight: bold;
+}
 .profilePicture{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.picture{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 90px;
+  height: 90px;
+  border: solid 3px #004D40;
+  border-radius: 100%;
+  background: linear-gradient(to left top, #e66465, #9198e5);
   margin: 30px 0px 30px 0px;
 }
-.profilePicture img{
-  padding: 20px;
-  width: 80px;
-  height: 80px;
-  border: solid 3px #004D40;
-  border-radius: 100%;*
+.cat{
+  position: relative;
+  height: 110px;
+  width: 110px;
+  bottom: 10px;
 }
 .darkBand{
   color: #00897B ;
@@ -75,17 +94,102 @@ margin: 100px 0px 0px 0px;
 .contactBox p{
   padding-left: 10%;
 }
-.aboutMeBox{
-  text-align: center;
-}
 .loisirIllustrationWrapper{
   display: flex;
   justify-content: space-around;
 }
 .loisirIllustrationWrapper i{
   font-size: 40px;
+  height: 40px;
+  width: 40px;
   border: 2px solid black;
   border-radius: 100%;
   padding: 10px;
   margin: 0px 0px 20px 0px;
+}
+/* Media Queries */
+@media screen and (min-width: 768px){
+  .contentWrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .leftContent{
+    margin-top: 40px;
+  }
+  .leftContent p{
+    min-width:110px ;
+  }
+  .rightContent p{
+    max-width: 400px;
+    text-align: justify;
+  }
+  .aboutMeBox{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutMeBox p{
+    text-align: justify;
+    max-width: 600px;
+  }
+
+}
+@media screen and (min-width: 1024px){
+  #leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 220px;
+    max-width: 500px;
+  }
+  .picture{
+    height: 160px;
+    width: 160px;
+  }
+  .cat{
+    width: 160px;
+    height: 160px;
+    bottom: 0px;
+  }
+  #rightSection{
+    min-width: 500px;
+  }
+  .rightContent p{
+    max-width: 650px;
+  }
+  .sectionContainer{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .aboutMeBox p{
+    text-align: justify;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1204px){
+  .rightContent p{
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1340px){
+  #leftSection{
+    min-width: 400px;
+  }
+  .picture{
+    height: 200px;
+    width: 200px;
+  }
+  .cat{
+    height: 200px;
+    width: 200px;
+  }
+  #rightSection{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1600px){
+  #rightSection{
+    width: 1600px;
+  }
 }
