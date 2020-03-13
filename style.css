@@ -2,6 +2,7 @@ body, html{
   padding:0px;
   margin: 0px;
   font-family: sans-serif;
+  background: linear-gradient(to top, #71a89a,#cee0de );
 }
 h3{
   font-weight: normal;
@@ -32,6 +33,7 @@ margin: 100px 0px 0px 0px;
 }
 .upperContent h2{
   margin: 0px;
+  font-size: 20px;
 }
 .leftContent{
   display: flex;
@@ -107,6 +109,9 @@ margin: 100px 0px 0px 0px;
   padding: 10px;
   margin: 0px 0px 20px 0px;
 }
+.aboutMeBox p{
+  margin: 10px;;
+}
 /* Media Queries */
 @media screen and (min-width: 768px){
   .contentWrapper{
@@ -118,6 +123,7 @@ margin: 100px 0px 0px 0px;
   }
   .leftContent p{
     min-width:110px ;
+    max-width: 120px;
   }
   .rightContent p{
     max-width: 400px;
@@ -131,15 +137,12 @@ margin: 100px 0px 0px 0px;
     text-align: justify;
     max-width: 600px;
   }
-
 }
 @media screen and (min-width: 1024px){
   #leftSection{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-width: 220px;
-    max-width: 500px;
   }
   .picture{
     height: 160px;
@@ -151,10 +154,10 @@ margin: 100px 0px 0px 0px;
     bottom: 0px;
   }
   #rightSection{
-    min-width: 500px;
+    width: 1200px;
   }
   .rightContent p{
-    max-width: 650px;
+    max-width: 300px;
   }
   .sectionContainer{
     display: flex;
@@ -167,7 +170,7 @@ margin: 100px 0px 0px 0px;
 }
 @media screen and (min-width: 1204px){
   .rightContent p{
-    max-width: 800px;
+    max-width: 300px;
   }
 }
 @media screen and (min-width: 1340px){
@@ -186,6 +189,7 @@ margin: 100px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     width: 1200px;
+    margin: 0px 80px 0px 80px;
   }
 }
 @media screen and (min-width: 1600px){
